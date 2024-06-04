@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Month</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Marsary</h1>
+        <div id ="question">
+          <p class="ask">Love mo  q?</p>
+        <button id="revealButton">Om</button>
+        <button id="changeText">Ayaw</button>
+        </div>
+        <div id="letterContent" class="hidden">
+            <p>
+                Hehe ayoko mag sulat so gawa nalang ako ganto HAHAHAHAHA. Akala mo ikaw lang kaya magtago ng orders HAHAHAHAHAHA, medyo kabado pa ko nung umorder ka ng cable, bat kase sa phone ko!!! Om plano ko na talaga to, like tanungin ka sa ganitong approach but it turns out monthsary ko na siya nagawa HAHAHAHAHA. Ou di kasi ako makadecide bibilhin ko sa dami kong nakikita, buti nga di mo napapansin sa ads ng newsfeed ko, ata HAHAHAHA. Anw, lagi mo na q kasama kahit sa work. Tas om dasurv q kiss tsaka ano, kiss na madami, damot. Om bilis no, parang kelan lang nagrereklamo ka pa bakit 9 ako nagtanong tsaka pano sasabihin sa barbies na tayo na, tas ngayon we're on our 1st month!!  suri if di ko hinahayaan intrusive thoughts ko selan di lang sanay eh. Om I Love You always &#9829 &#9829 ingat palagi sa work, pwede mag joyride wag mo lang kiss driver. Sumbong kita ah.
+                <br />
+            </p>
+            <footer>
+                Love,<br>
+                Mars
+            </footer>
+            <img src="./ily.gif" alt="Happy 1st Month">
+        </div>
+    </div>
+
+    <script>
+    
+      document.addEventListener("DOMContentLoaded", function () {
+        const revealButton = document.getElementById("revealButton");
+        const letterContent = document.getElementById("letterContent");
+        const asking = document.getElementById("question");
+
+        changeText.addEventListener("click", function () {
+        changeText.style.display = "none";
+      });
+
+        revealButton.addEventListener("click", function () {
+          letterContent.classList.remove("hidden");
+          letterContent.classList.add("revealed");
+          revealButton.style.display = "none";
+          asking.style.display = "none";
+        });
+      });
+
+    </script>
+</body>
+</html>

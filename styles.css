@@ -95,4 +95,6 @@ button:hover {
   opacity: 1;
   max-height: 1vh;
   animation: revealLetter 2s ease-in-out forwards;
+  overflow-x: auto;
+  overflow-y: auto;
 }
